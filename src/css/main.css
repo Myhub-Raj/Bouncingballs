@@ -1,150 +1,100 @@
-/*
-  You can use import statements to include partials:
- */
 @import "imports/reset.css";
 
 * { box-sizing: border-box }
 
-h1 {
-    background:#fe001a;
-    display: flex;
-    justify-content: center;
-}
-
-
 body {
-    background: #WHITE;
-   display: flex;
-   justify-content: center;
+  font-family: 'Coming Soon', cursive;
+  transition: background 1s ease;
+   background: #fe001a;
+   color:#fff;
+    text-align:center;
+    background-image: url('https://subtlepatterns.com/patterns/geometry2.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    -webkit-animation: backgroundScroll 15s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 15s linear 1;
+    animation-fill-mode: forwards;
+
+ }
+ @-webkit-keyframes backgroundScroll {
+ from {background-position: 0 0;}
+ to {background-position: -180px 0px;}
+ }
+ @keyframes backgroundScroll {
+ from {background-position: 0 0;}
+ to {background-position: -180px 0px;}
+
+ }
+  h1{
+  font-family: 'Molle', cursive;
+  text-align: left;
+  color: #WHITE;
+  font-size:2em;
+  margin-top:1em;
+  margin-left: 900px;
+  transform: skew(4.5deg, 163.3deg);
+  padding right:200px;
+}
+
+h3{
+font-family: 'Molle', cursive;
+text-align: left;
+color: white;
+font-size:1.5em;
+transform: skew(3.8deg, 173.5deg);
+padding right:300px;
 }
 
 
-.ball {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #fe001a;
+ #circle {
+      width: 50px;
+      height: 50px;
+      padding-right:20px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: red;
+    }
 
-  animation: bounce 0.4s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: infinite;
+p {
+  font-size: 1em;
+  text-align: left;
 }
 
-@keyframes bounce {
-  from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(0, 200px, 0); }
+span {
+  clear: both;
+  font-size:1.2em;
+  font-family: 'Molle', cursive;
+
 }
 
-/* Prefix Support */
-ball {
-  -webkit-animation-name: bounce;
-  -webkit-animation-duration: 0.4s;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  -webkit-animation-iteration-count: infinite;
+a {
+  color: #fe001a;
+  text-decoration: none;
 }
 
-@-webkit-keyframes bounce {
-  from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-  to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
-}
+  .inside {
+    display: table;
+    height: 100%;
+    width: 100%;
+    padding: 0.3em;
+    background:#fe001a;
+    text-align:center;
+    font-family: 'Molle', cursive;
+  }
 
-/*BALL1*/
-
-.ball1 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #fe001a;
-
-  animation: bounce 0.6s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(0, 200px, 0); }
-}
-
-/* Prefix Support */
-ball1 {
-  -webkit-animation-name: bounce;
-  -webkit-animation-duration: 0.6s;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes bounce {
-  from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-  to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
-}
-
-
-/*BALL2*/
-
-.ball2{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #fe001a;
-
-  animation: bounce 0.8s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(0, 200px, 0); }
-}
-
-/* Prefix Support */
-ball2 {
-  -webkit-animation-name: bounce;
-  -webkit-animation-duration: 0.8s;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes bounce {
-  from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-  to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
-}
-
-
-.ball3{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #fe001a;
-
-  animation: bounce 1.0s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(0, 200px, 0); }
-}
-
-/* Prefix Support */
-ball3 {
-  -webkit-animation-name: bounce;
-  -webkit-animation-duration: 1.0s;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes bounce {
-  from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-  to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
+    p {
+      display: table-cell;
+      width: 100%;
+      clear: both;
+      vertical-align: middle;
+      text-align:center;
+      font-size: 20px;
+      border-bottom: 30px;
+        color:WHITE;
+        font-family: 'Molle', cursive;
 }
