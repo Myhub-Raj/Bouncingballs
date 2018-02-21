@@ -1,9 +1,7 @@
 /*
   You can use import statements to include partials:
  */
-@import "imports/reset.css";
 
-* { box-sizing: border-box }
 
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 
