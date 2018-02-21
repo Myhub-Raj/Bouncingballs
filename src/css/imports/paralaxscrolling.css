@@ -14,7 +14,7 @@ html {
   overflow: hidden;
 }
 
-body { 
+body {
   margin:0;
   padding:0;
 	perspective: 1px;
@@ -26,22 +26,15 @@ body {
 }
 
 h1 {
-   font-size: 250%
+   font-size: 250%;
    font-family: 'Molle', cursive;
    margin-top: 3em;
    transform: skew(15deg, 100deg);
    padding right:50px;
 }
 
-h1 {
-   font-size: 250%
-   font-family: 'Molle', cursive;
-   margin-top: 3em;
-   transform: skew(15deg, 100deg);
-   padding right:50px;
-}
 h6 {
-   font-size: 50%
+   font-size: 50%;
    font-family: 'Molle', cursive;
    margin-top: 2.5em;
    transform: skew(2deg, -25deg);
@@ -111,7 +104,7 @@ img:last-of-type {
 }
 
 .slide, .slide:before {
-  background: 50% 50% / cover;  
+  background: 50% 50% / cover;
 }
 
 .header {
@@ -150,5 +143,3 @@ img:last-of-type {
 #slide4 {
   background: #222;
 }
-
-
